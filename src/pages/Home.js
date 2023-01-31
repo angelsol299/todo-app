@@ -32,10 +32,9 @@ const Home = () => {
         onHandleChange={onHandleChange}
         addTodoItem={addTodoItem}
         todoText={todoText}
-        handleSubmit={() => console.log("submitted")}
       />
       <TodoList todoItems={todoItems} deleteItem={deleteItem} />
-      <Button text={"CLEAR ALL"} icon={"*"} onClick={clearItems} />
+      <Button text={"CLEAR ALL"} onClick={clearItems} />
     </div>
   );
 };

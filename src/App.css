@@ -103,25 +103,6 @@
   width: 45%;
 }
 
-@media only screen and (max-width: 1000px) {
-  .home-page-container {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .home-page-container {
-    width: 100%;
-    height: 100%;
-  }
-  .input-submit-form {
-    width: 300px;
-  }
-  .todo-item {
-    width: 300px;
-  }
-}
-
 .todo-item:nth-child(even) {
   background-color: #f4f4f4;
 }
@@ -203,4 +184,23 @@
 #trash-can-icon {
   font-size: 16px;
   color: #c6c4c4;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-page-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .home-page-container {
+    width: 100%;
+    height: 100%;
+  }
+  .input-submit-form {
+    width: 300px;
+  }
+  .todo-item {
+    width: 300px;
+  }
 }
