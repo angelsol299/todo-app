@@ -1,7 +1,9 @@
+import TrashCanIcon from "./TrashCanIcon";
+
 const Button = ({ text, icon, onClick }) => {
   return (
     <div className="button-container" onClick={onClick}>
-      <span>{icon}</span>
+      <TrashCanIcon />
       <p className="button-text">{text}</p>
     </div>
   );

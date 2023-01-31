@@ -1,6 +1,11 @@
 const Form = ({ onHandleChange, addTodoItem, todoText }) => {
   return (
     <div className="todo-form">
+      {!todoText && (
+        <div className="pen-icon">
+          <i className="fa-solid fa-pen" id="trash-can-icon" />
+        </div>
+      )}
       <input
         className="input-submit-form"
         type="text"
@@ -10,7 +15,6 @@ const Form = ({ onHandleChange, addTodoItem, todoText }) => {
         onChange={onHandleChange}
         onKeyDown={addTodoItem}
       />
-      {/* <button type="submit">Add Todo</button> */}
     </div>
   );
 };
